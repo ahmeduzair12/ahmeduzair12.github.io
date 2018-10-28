@@ -20,7 +20,7 @@ var coordInfoWindow = new google.maps.InfoWindow();
 google.maps.event.addListener(map, 'click', function(event) {
     var lat = event.latLng.lat();
     var lon = event.latLng.lng();
-    var url = 'http://api.openweathermap.org/data/2.5/weather?APPID=fcf0a3470d059666988540d3948ccf55&lat=' + lat + '&lon=' + lon;
+    var url = 'https://api.openweathermap.org/data/2.5/weather?APPID=fcf0a3470d059666988540d3948ccf55&lat=' + lat + '&lon=' + lon;
     var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
