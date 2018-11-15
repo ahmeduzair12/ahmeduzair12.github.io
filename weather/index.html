@@ -1,5 +1,3 @@
-<!---    AIzaSyDbRKGXldv7wA8J_4KzGSJi4v5_Pz6Xgrw -->
-
 <!DOCTYPE html>
 <html>
 
@@ -90,7 +88,6 @@
       }
 
 </style>
-
 <body class="bg-dark">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
@@ -112,8 +109,6 @@
 				mapTypeId: 'roadmap'
 			};
 			var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-			
-
 					var input = document.getElementById('pac-input');
 					var searchBox = new google.maps.places.SearchBox(input);
 					map.controls[google.maps.ControlPosition.TOP_RIGHT].push(input);
@@ -138,7 +133,6 @@
 						marker.setMap(null);
 					});
 					markers = [];
-
 					// For each place, get the icon, name and location.
 					var bounds = new google.maps.LatLngBounds();
 					places.forEach(function(place) {
@@ -194,10 +188,6 @@
 						var img = data.weather[0].icon;
 						var img_urlm = "http://openweathermap.org/img/w/";
 						var main_img = img_urlm + img + '.png';
-						// var image_element = document.getElementById("img1");
-
-
-
 											coordInfoWindow.setContent(`
 							<img src = "` + main_img + `">  <br/>
 								City: ` + cityname + `<br/>
@@ -215,9 +205,6 @@
 		}
 
 	</script>
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbRKGXldv7wA8J_4KzGSJi4v5_Pz6Xgrw&callback=myMap"></script> -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbRKGXldv7wA8J_4KzGSJi4v5_Pz6Xgrw&libraries=places&callback=initAutocomplete&callback=myMap"></script>
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbRKGXldv7wA8J_4KzGSJi4v5_Pz6Xgrw&libraries=places&callback=initAutocomplete"></script>
 </body> -->
-
 </html>
